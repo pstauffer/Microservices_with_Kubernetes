@@ -13,8 +13,7 @@ script:
 - git config --global user.email "pascal@github.com"
 - git config --global user.name "Travis CI"
 - cd mkdocs && mkdocs build
-- ../../site
-- ls -l
+- cd ../../site && ls -l
 - git init
 - git add .
 - git commit -m "Deploy to Github Pages"
