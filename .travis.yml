@@ -1,6 +1,7 @@
 sudo: false
 language: python
 python: '3.5'
+
 env:
   global:
     - GITHUB_REPO: "pstauffer/Microservices_with_Kubernetes"
@@ -8,13 +9,11 @@ env:
 
 install:
 - pip install mkdocs
+
 script:
-- ls -l
 - git config --global user.email "pascal@github.com"
 - git config --global user.name "Travis CI"
 - cd mkdocs && mkdocs build
 - cd ../../site && ls -l
-- git init
-- git add .
-- git commit -m "Deploy to Github Pages"
+- git init && git add . && git commit -m "Deploy to Github Pages"
 - git push --force --quiet https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git master:gh-pages
