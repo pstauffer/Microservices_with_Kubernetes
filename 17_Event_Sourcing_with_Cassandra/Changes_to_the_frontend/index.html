@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Changes to the frontend - Rob Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Changes to the frontend";
+    var mkdocs_page_input_path = "17_Event_Sourcing_with_Cassandra/Changes_to_the_frontend.md";
+    var mkdocs_page_url = "/17_Event_Sourcing_with_Cassandra/Changes_to_the_frontend/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Rob Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../README/">README</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>01 Setup</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../01_Setup/Host_setup/">Host setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../01_Setup/Kubernetes_setup/">Kubernetes setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../01_Setup/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>02 First rest service</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/Deploy_in_Kubernetes/">Deploy in Kubernetes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/Dockerization/">Dockerization</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/JavaEE_service/">JavaEE service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>03 Docker registry</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../03_Docker_registry/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>04 Jenkins</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../04_Jenkins/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>05 Build and push ci step</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../05_Build_and_push_ci_step/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>06 Systemtest ci step</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/Setup_test_env/">Setup test env</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/Start_pipeline_on_every_push/">Start pipeline on every push</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/Systemtest/">Systemtest</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>07 UI test</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../07_UI_test/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>08 Lasttest</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../08_Lasttest/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>09 Manual test</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../09_Manual_test/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>10 Canary release</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../10_Canary_release/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>11 Full production release</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../11_Full_production_release/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>12 Own Gogs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../12_Own_Gogs/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>13 Monitoring</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/Dashboard/">Dashboard</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/Prometheus/">Prometheus</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/Weave_scope/">Weave scope</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>14 Documentation of rest service</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../14_Documentation_of_rest_service/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>15 Angular2 frontend</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/First_view/">First view</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/Initial_setup/">Initial setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/Test_and_prod_stage/">Test and prod stage</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>16 SSO with Keycloak</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/Initial_setup_of_Keycloak/">Initial setup of Keycloak</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/Secure_REST_service/">Secure REST service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/Secure_frontend_service/">Secure frontend service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/Setup_Keycloak/">Setup Keycloak</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>17 Event Sourcing with Cassandra</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Changes to the frontend</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#change-to-the-frontend-service">Change to the frontend service</a></li>
+                
+                    <li><a class="toctree-l4" href="#usage-of-the-new-rest-method">Usage of the new REST method</a></li>
+                
+                    <li><a class="toctree-l4" href="#alias-for-test-environment">Alias for test environment</a></li>
+                
+                    <li><a class="toctree-l4" href="#changes-to-the-test-environment">Changes to the test environment</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../REST_service_with_event_sourcing/">REST service with event sourcing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Setup_Cassandra/">Setup Cassandra</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Mkdocs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../mkdocs/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Rob Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>17 Event Sourcing with Cassandra &raquo;</li>
+        
+      
+    
+    <li>Changes to the frontend</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/robertBrem/Microservices_with_Kubernetes/edit/master/docs/17_Event_Sourcing_with_Cassandra/Changes_to_the_frontend.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="change-to-the-frontend-service">Change to the frontend service</h1>
+<h2 id="usage-of-the-new-rest-method">Usage of the new REST method</h2>
+<p>We've created a create method in the REST service now we've to
+call this service in the frontend. Therefore the following
+files have to be adapted:</p>
+<p><code>user.ts</code></p>
+<pre><code>export class User {
+  id: string;
+  nickame: string;
+  firstname: string;
+  lastname: string;
+
+  constructor() {
+  }
+
+}
+</code></pre>
+
+<p><code>user.component.html</code></p>
+<pre><code>&lt;form&gt;
+  &lt;md-card&gt;
+    &lt;md-card-title-group&gt;
+      &lt;md-input #id placeholder=&quot;ID&quot;&gt;&lt;/md-input&gt;
+      &lt;md-input #nickname placeholder=&quot;Nickname&quot;&gt;&lt;/md-input&gt;
+      &lt;md-input #firstName placeholder=&quot;First Name&quot;&gt;&lt;/md-input&gt;
+      &lt;md-input #lastName placeholder=&quot;Last Name&quot;&gt;&lt;/md-input&gt;
+    &lt;/md-card-title-group&gt;
+  &lt;/md-card&gt;
+  &lt;button md-raised-button
+          (click)=&quot;createUser(id.value, nickname.value, firstName.value, lastName.value)&quot;
+          class=&quot;btn btn-primary btn-lg&quot;&gt;
+    create
+  &lt;/button&gt;
+&lt;/form&gt;
+
+&lt;md-input placeholder=&quot;Nickname&quot; (keyup)=&quot;search($event)&quot;&gt;&lt;/md-input&gt;
+
+&lt;md-card *ngFor=&quot;let user of users&quot;&gt;
+  &lt;md-card-title-group&gt;
+    &lt;img md-card-sm-image src=&quot;path/to/img.png&quot;&gt;
+    &lt;md-card-title&gt;{{ user.nickname }}&lt;/md-card-title&gt;
+    &lt;md-card-subtitle&gt;{{ user.firstName }}&lt;/md-card-subtitle&gt;
+    &lt;md-card-subtitle&gt;{{ user.lastName }}&lt;/md-card-subtitle&gt;
+  &lt;/md-card-title-group&gt;
+&lt;/md-card&gt;
+</code></pre>
+
+<p><code>user.component.ts</code></p>
+<pre><code>import {User} from &quot;./user&quot;;
+import {UserService} from &quot;./users.service&quot;;
+import {Component} from &quot;@angular/core&quot;;
+
+@Component({
+  selector: 'battleapp-user',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.css'],
+  providers: [UserService],
+})
+export class UserComponent {
+  private users: User[];
+
+  constructor(private service: UserService) {
+  }
+
+  ngOnInit() {
+    this.getUsers();
+  }
+
+  public createUser(id: string, nickname: string, firstName: string, lastName: string) {
+    return this.service
+      .create(id, nickname, firstName, lastName)
+      .subscribe((data: User) =&gt; {
+          let user: User = data;
+          console.log(user);
+          this.users.push(user);
+        },
+        error =&gt; console.log(error)
+      );
+  }
+
+  public search(event: any) {
+    let searchTerm: string = event.target.value;
+    this.service
+      .search(searchTerm)
+      .subscribe((data: User[]) =&gt; {
+          this.users = data;
+        },
+        error =&gt; console.log(error)
+      );
+  }
+
+  private getUsers() {
+    this.service
+      .getAll()
+      .subscribe((data: User[]) =&gt; {
+          this.users = data;
+        },
+        error =&gt; console.log(error),
+        () =&gt; console.log(this.users)
+      );
+  }
+  ;
+
+}
+</code></pre>
+
+<p><code>user.service.ts</code></p>
+<pre><code>import {Injectable} from &quot;@angular/core&quot;;
+import {Response, Http} from &quot;@angular/http&quot;;
+import {Observable} from &quot;rxjs&quot;;
+import {User} from &quot;./user&quot;;
+import {AuthHttp} from &quot;angular2-jwt&quot;;
+
+@Injectable()
+export class UserService {
+  private environment: Observable&lt;any&gt;;
+
+  constructor(private authHttp: AuthHttp, private http: Http) {
+    this.environment = this.http
+      .get('/environment/environment.json')
+      .map(res =&gt; res.json());
+  }
+
+  public getUsersUrl(env: any): string {
+    let usersUrl = 'http://' + env.host + ':' + env.port + '/battleapp/resources/users/';
+    return usersUrl;
+  }
+
+  public getAll = (): Observable&lt;User[]&gt; =&gt; {
+    return this.environment.flatMap((env: any) =&gt; {
+      return this.authHttp
+        .get(this.getUsersUrl(env))
+        .map(res =&gt; res.json());
+    });
+  };
+
+  public search = (nickname: string): Observable&lt;User[]&gt; =&gt; {
+    return this.environment.flatMap((env: any) =&gt; {
+      return this.authHttp
+        .get(this.getUsersUrl(env) + &quot;?nickname=&quot; + nickname)
+        .map(res =&gt; res.json());
+    });
+  };
+
+  public find = (id: number): Observable&lt;User&gt; =&gt; {
+    return this.environment.flatMap((env: any) =&gt; {
+      return this.authHttp
+        .get(this.getUsersUrl(env) + id)
+        .map(res =&gt; res.json());
+    });
+  };
+
+  public create = (id: string, nickname: string, firstName: string, lastName: string): Observable&lt;User&gt; =&gt; {
+    return this.environment.flatMap((env: any) =&gt; {
+      var toAdd = JSON.stringify({id: id, nickname: nickname, firstName: firstName, lastName: lastName});
+      return this.authHttp
+        .post(this.getUsersUrl(env), toAdd)
+        .map(res =&gt; res.json());
+    });
+  };
+
+  public update = (id: number, itemToUpdate: User): Observable&lt;User&gt; =&gt; {
+    return this.environment.flatMap((env: any) =&gt; {
+      return this.authHttp
+        .put(this.getUsersUrl(env) + id, JSON.stringify(itemToUpdate))
+        .map(res =&gt; res.json());
+    });
+  };
+
+  public delete = (id: number): Observable&lt;Response&gt; =&gt; {
+    return this.environment.flatMap((env: any) =&gt; {
+      return this.authHttp
+        .delete(this.getUsersUrl(env) + id);
+    });
+  };
+}
+</code></pre>
+
+<h2 id="alias-for-test-environment">Alias for test environment</h2>
+<p>That we can execute commands in the test namespace we're going
+to create a new alias:</p>
+<pre><code>vi ~/.alias
+</code></pre>
+
+<pre><code>alias kc='kubectl --kubeconfig /home/battleapp/Desktop/admin.conf'
+alias watchkc='watch kubectl --kubeconfig /home/battleapp/Desktop/admin.conf'
+alias mountWin='sudo mount -t vboxsf Microservices_with_Kubernetes /media/windows-share'
+alias startKeycloak='docker stop keycloak &amp;&amp; docker rm keycloak &amp;&amp; docker run -d -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -p 8280:8080 -v /home/battleapp/Desktop/dockervolumes/keycloakdata/:/opt/jboss/keycloak/standalone/data --name keycloak jboss/keycloak:2.4.0.Final'
+alias startCass='~/Desktop/startCassandra.sh'
+alias kctest='kubectl --kubeconfig /home/battleapp/Desktop/admin.conf --namespace test'
+</code></pre>
+
+<h2 id="changes-to-the-test-environment">Changes to the test environment</h2>
+<p>In the frontend we need additionally to the Kubernetes secret
+for the registry a Kubernetes configmap:</p>
+<pre><code>kc delete configmap battleapp-frontend-test
+kctest create configmap battleapp-frontend --from-file battleapp-frontend-test
+</code></pre>
+
+<p>Changes to the <code>start.js</code> script:</p>
+<pre><code>...
+var name = &quot;battleapp-frontend&quot;;
+...
+dfw.write(&quot;        configMap:\n&quot;);
+dfw.write(&quot;          name: battleapp-frontend\n&quot;);
+...
+dfw.write(&quot;        configMap:\n&quot;);
+dfw.write(&quot;          name: battleapp-frontend\n&quot;);
+...
+var deleteDeployment = kubectl + &quot; --namespace &quot; + namespace + &quot; delete deployment &quot; + name;
+...
+dfw.write(&quot;kind: Deployment\n&quot;);
+dfw.write(&quot;metadata:\n&quot;);
+dfw.write(&quot;  name: &quot; + name + &quot;\n&quot;);
+dfw.write(&quot;  namespace: &quot; + namespace + &quot;\n&quot;);
+...
+var deleteService = kubectl + &quot; --namespace &quot; + namespace + &quot;delete service &quot; + name;
+...
+sfw.write(&quot;kind: Service\n&quot;);
+sfw.write(&quot;metadata:\n&quot;);
+sfw.write(&quot;  name: &quot; + name + &quot;\n&quot;);
+sfw.write(&quot;  namespace: &quot; + namespace + &quot;\n&quot;);
+...
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../README/" class="btn btn-neutral float-right" title="README">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../16_SSO_with_Keycloak/Setup_Keycloak/" class="btn btn-neutral" title="Setup Keycloak"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/robertBrem/Microservices_with_Kubernetes" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../16_SSO_with_Keycloak/Setup_Keycloak/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../README/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

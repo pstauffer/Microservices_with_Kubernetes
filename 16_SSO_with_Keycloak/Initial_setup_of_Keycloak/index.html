@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Initial setup of Keycloak - Rob Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Initial setup of Keycloak";
+    var mkdocs_page_input_path = "16_SSO_with_Keycloak/Initial_setup_of_Keycloak.md";
+    var mkdocs_page_url = "/16_SSO_with_Keycloak/Initial_setup_of_Keycloak/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Rob Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../README/">README</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>01 Setup</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../01_Setup/Host_setup/">Host setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../01_Setup/Kubernetes_setup/">Kubernetes setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../01_Setup/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>02 First rest service</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/Deploy_in_Kubernetes/">Deploy in Kubernetes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/Dockerization/">Dockerization</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/JavaEE_service/">JavaEE service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>03 Docker registry</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../03_Docker_registry/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>04 Jenkins</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../04_Jenkins/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>05 Build and push ci step</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../05_Build_and_push_ci_step/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>06 Systemtest ci step</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/Setup_test_env/">Setup test env</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/Start_pipeline_on_every_push/">Start pipeline on every push</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/Systemtest/">Systemtest</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>07 UI test</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../07_UI_test/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>08 Lasttest</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../08_Lasttest/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>09 Manual test</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../09_Manual_test/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>10 Canary release</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../10_Canary_release/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>11 Full production release</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../11_Full_production_release/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>12 Own Gogs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../12_Own_Gogs/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>13 Monitoring</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/Dashboard/">Dashboard</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/Prometheus/">Prometheus</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/Weave_scope/">Weave scope</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>14 Documentation of rest service</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../14_Documentation_of_rest_service/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>15 Angular2 frontend</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/First_view/">First view</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/Initial_setup/">Initial setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/Test_and_prod_stage/">Test and prod stage</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>16 SSO with Keycloak</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Initial setup of Keycloak</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#initial-setup-of-keycloak">Initial setup of Keycloak</a></li>
+                
+                    <li><a class="toctree-l4" href="#start-a-local-keycloak-server">Start a local Keycloak server</a></li>
+                
+                    <li><a class="toctree-l4" href="#create-keycloak-roles-and-users">Create Keycloak roles and users</a></li>
+                
+                    <li><a class="toctree-l4" href="#add-the-rest-service-and-the-frontend">Add the REST service and the frontend</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Secure_REST_service/">Secure REST service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Secure_frontend_service/">Secure frontend service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Setup_Keycloak/">Setup Keycloak</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>17 Event Sourcing with Cassandra</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../17_Event_Sourcing_with_Cassandra/Changes_to_the_frontend/">Changes to the frontend</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../17_Event_Sourcing_with_Cassandra/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../17_Event_Sourcing_with_Cassandra/REST_service_with_event_sourcing/">REST service with event sourcing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../17_Event_Sourcing_with_Cassandra/Setup_Cassandra/">Setup Cassandra</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Mkdocs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../mkdocs/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Rob Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>16 SSO with Keycloak &raquo;</li>
+        
+      
+    
+    <li>Initial setup of Keycloak</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/robertBrem/Microservices_with_Kubernetes/edit/master/docs/16_SSO_with_Keycloak/Initial_setup_of_Keycloak.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="initial-setup-of-keycloak">Initial setup of Keycloak</h1>
+<p>That we can use Keyclaok for our <code>jax-rs</code> service and our Angular2 frontend
+we have to create some roles and a user.</p>
+<h2 id="start-a-local-keycloak-server">Start a local Keycloak server</h2>
+<p>That we can test our application on the local machine we've to start a 
+Keycloak server locally.</p>
+<p>For our local Keycloak server we don't need SSL therefore we can use the
+officially image directly. But first we need to create a local folder
+where Keycloak can store its persistent data:</p>
+<pre><code>mkdir -p ~/Desktop/dockervolumes/keycloakdata
+</code></pre>
+
+<p>Set the rights of the folder to <code>1000:1000</code>:</p>
+<pre><code>chown -R 1000:1000 ~/Desktop/dockervolumes/keycloakdata
+</code></pre>
+
+<p>And now we can start our local Keycloak server.</p>
+<pre><code>docker run -d -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -p 8280:8080 -v ~/Desktop/dockervolumes/keycloakdata/:/opt/jboss/keycloak/standalone/data --name keycloak jboss/keycloak:2.4.0.Final
+</code></pre>
+
+<h2 id="create-keycloak-roles-and-users">Create Keycloak roles and users</h2>
+<p>Open the Keycloak console on <code>http://localhost:8280/auth/admin</code>.</p>
+<p><img alt="Keycloak login" src="../images/keycloak_login.png" /></p>
+<p>Login in with the user <code>admin</code> and the password <code>admin</code>. We've defined this
+password on the startup of the Docker container.</p>
+<p>Keycloak displays the Master realm. That's the realm for Keycloak itself.
+For our application we need an own realm therefore we've to create one.
+Click on <code>Master</code> and a button <code>Add realm</code> appears.</p>
+<p><img alt="Add realm" src="../images/add_realm.png" /></p>
+<p>We choose the name <code>battleapp-local</code> for our local Keycloak.</p>
+<blockquote>
+<p>We also have to create two realms on our Keycloak that we've started in
+Kubernetes. One for the test stage and one for the production stage.
+I called them <code>battleapp-test</code> and <code>battleapp</code>.</p>
+</blockquote>
+<p><img alt="Create the realm" src="../images/create_realm.png" /></p>
+<p>Click <code>Create</code>.</p>
+<p>First we're going to create two roles <code>user</code> and <code>admin</code>. Change to the 
+<code>Roles</code> tab and create these two roles.</p>
+<p><img alt="Keycloak roles" src="../images/keycloak_roles.png" /></p>
+<p>Click on the button <code>Add Role</code>.</p>
+<p><img alt="Add a Keycloak role" src="../images/keycloak_add_role.png" /></p>
+<p>Click <code>Save</code> and do the same for <code>admin</code>.</p>
+<p>When we've the roles we can create a user and add these roles to the user.
+Change to the <code>Users</code> tab and create a user.</p>
+<p><img alt="Keycloak users" src="../images/keycloak_users.png" /></p>
+<p>Click on the button <code>Add user</code>.</p>
+<p><img alt="Add a Keycloak user" src="../images/create_user.png" /></p>
+<p>Click <code>Save</code>.</p>
+<p>That the user can login he need a password. Therefore we've to change 
+to the <code>Credentials</code> tab and enter a password.</p>
+<p><img alt="User credentials" src="../images/user_credentials.png" /></p>
+<p>Click <code>Reset Password</code> -&gt; <code>Change Password</code>.</p>
+<p>The last setting we've to make is to assign the created roles to our user.
+Change to the <code>Role Mappings</code> tab and assign the <code>user</code> and <code>admin</code> role
+from <code>Available Roles</code> to <code>Assigned Roles</code>.</p>
+<p><img alt="Assign roles" src="../images/assign_roles.png" /></p>
+<h2 id="add-the-rest-service-and-the-frontend">Add the REST service and the frontend</h2>
+<p>Keycloak need to know where our applications are running. We can setup our
+two microservices in the <code>Client</code> tab.</p>
+<p><img alt="Keycloak clients" src="../images/keycloak_clients.png" /></p>
+<p>Click on the button <code>Create</code>.<br />
+The REST service is the first service we're going to create.</p>
+<p><img alt="Add a Keycloak client" src="../images/create_client.png" /></p>
+<p>Click <code>Save</code>.</p>
+<p>Change the <code>Access Type</code> to <code>bearer-only</code> and click <code>Save</code>.</p>
+<p><img alt="Use bearer-only" src="../images/bearer_only.png" /></p>
+<p>That was all for the REST service now we can create the frontend service.</p>
+<p><img alt="Frontend client" src="../images/frontend_client.png" /></p>
+<p>Click <code>Save</code>.</p>
+<p>The frontend service is of the already chosen <code>Access Type</code> <code>public</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../README/" class="btn btn-neutral float-right" title="README">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../15_Angular2_frontend/Test_and_prod_stage/" class="btn btn-neutral" title="Test and prod stage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/robertBrem/Microservices_with_Kubernetes" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../15_Angular2_frontend/Test_and_prod_stage/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../README/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

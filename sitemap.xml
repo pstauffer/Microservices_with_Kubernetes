@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>/01_Setup/Host_setup/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/01_Setup/Kubernetes_setup/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/01_Setup/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/02_First_rest_service/Deploy_in_Kubernetes/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/02_First_rest_service/Dockerization/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/02_First_rest_service/JavaEE_service/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/02_First_rest_service/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/03_Docker_registry/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/04_Jenkins/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/05_Build_and_push_ci_step/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/06_Systemtest_ci_step/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/06_Systemtest_ci_step/Setup_test_env/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/06_Systemtest_ci_step/Start_pipeline_on_every_push/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/06_Systemtest_ci_step/Systemtest/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/07_UI_test/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/08_Lasttest/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/09_Manual_test/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/10_Canary_release/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/11_Full_production_release/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/12_Own_Gogs/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/13_Monitoring/Dashboard/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/13_Monitoring/Prometheus/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/13_Monitoring/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/13_Monitoring/Weave_scope/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/14_Documentation_of_rest_service/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/15_Angular2_frontend/First_view/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/15_Angular2_frontend/Initial_setup/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/15_Angular2_frontend/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/15_Angular2_frontend/Test_and_prod_stage/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/16_SSO_with_Keycloak/Initial_setup_of_Keycloak/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/16_SSO_with_Keycloak/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/16_SSO_with_Keycloak/Secure_REST_service/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/16_SSO_with_Keycloak/Secure_frontend_service/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/16_SSO_with_Keycloak/Setup_Keycloak/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/17_Event_Sourcing_with_Cassandra/Changes_to_the_frontend/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/17_Event_Sourcing_with_Cassandra/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/17_Event_Sourcing_with_Cassandra/REST_service_with_event_sourcing/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/17_Event_Sourcing_with_Cassandra/Setup_Cassandra/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/mkdocs/README/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>README - Rob Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "README";
+    var mkdocs_page_input_path = "05_Build_and_push_ci_step/README.md";
+    var mkdocs_page_url = "/05_Build_and_push_ci_step/README/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Rob Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../README/">README</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>01 Setup</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../01_Setup/Host_setup/">Host setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../01_Setup/Kubernetes_setup/">Kubernetes setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../01_Setup/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>02 First rest service</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/Deploy_in_Kubernetes/">Deploy in Kubernetes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/Dockerization/">Dockerization</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/JavaEE_service/">JavaEE service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../02_First_rest_service/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>03 Docker registry</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../03_Docker_registry/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>04 Jenkins</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../04_Jenkins/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>05 Build and push ci step</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">README</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#build-and-push-ci-step">Build and push CI step</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#create-a-jenkinsfile">Create a Jenkinsfile</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-maven-in-jenkins">Install Maven in Jenkins</a></li>
+                
+                    <li><a class="toctree-l4" href="#create-the-build-script">Create the build script</a></li>
+                
+                    <li><a class="toctree-l4" href="#create-the-pipeline-in-jenkins">Create the pipeline in Jenkins</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>06 Systemtest ci step</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/Setup_test_env/">Setup test env</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/Start_pipeline_on_every_push/">Start pipeline on every push</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../06_Systemtest_ci_step/Systemtest/">Systemtest</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>07 UI test</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../07_UI_test/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>08 Lasttest</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../08_Lasttest/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>09 Manual test</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../09_Manual_test/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>10 Canary release</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../10_Canary_release/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>11 Full production release</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../11_Full_production_release/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>12 Own Gogs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../12_Own_Gogs/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>13 Monitoring</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/Dashboard/">Dashboard</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/Prometheus/">Prometheus</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../13_Monitoring/Weave_scope/">Weave scope</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>14 Documentation of rest service</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../14_Documentation_of_rest_service/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>15 Angular2 frontend</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/First_view/">First view</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/Initial_setup/">Initial setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../15_Angular2_frontend/Test_and_prod_stage/">Test and prod stage</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>16 SSO with Keycloak</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/Initial_setup_of_Keycloak/">Initial setup of Keycloak</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/Secure_REST_service/">Secure REST service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/Secure_frontend_service/">Secure frontend service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../16_SSO_with_Keycloak/Setup_Keycloak/">Setup Keycloak</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>17 Event Sourcing with Cassandra</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../17_Event_Sourcing_with_Cassandra/Changes_to_the_frontend/">Changes to the frontend</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../17_Event_Sourcing_with_Cassandra/README/">README</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../17_Event_Sourcing_with_Cassandra/REST_service_with_event_sourcing/">REST service with event sourcing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../17_Event_Sourcing_with_Cassandra/Setup_Cassandra/">Setup Cassandra</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Mkdocs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../mkdocs/README/">README</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Rob Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>05 Build and push ci step &raquo;</li>
+        
+      
+    
+    <li>README</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/robertBrem/Microservices_with_Kubernetes/edit/master/docs/05_Build_and_push_ci_step/README.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="build-and-push-ci-step">Build and push CI step</h1>
+<p>The first step of the CI/CD pipeline is the creation of the service as a Docker image.  </p>
+<h1 id="create-a-jenkinsfile">Create a <code>Jenkinsfile</code></h1>
+<p>To create a new pipeline we've to create a <code>Jenkinsfile</code> similar to <a href="https://gist.github.com/robertBrem/b18dee521176a3d75026cbe902d16b2f">this one</a>.</p>
+<pre><code class="groovy">withEnv([&quot;VERSION=1.0.${currentBuild.number}&quot;, &quot;REGISTRY_EMAIL=brem_robert@hotmail.com&quot;]) {
+  stage &quot;checkout, build, test and publish&quot;
+  node {
+    git url: &quot;https://github.com/robertBrem/battleapp&quot;
+    def mvnHome = tool 'M3'
+    sh &quot;${mvnHome}/bin/mvn clean install&quot;
+    sh &quot;./build.js&quot;
+  }
+}
+</code></pre>
+
+<h2 id="install-maven-in-jenkins">Install Maven in Jenkins</h2>
+<p>Before we can execute this pipeline we have to install Maven in Jenkins.<br />
+<code>Manage Jenkins</code> <code>Global Tool Configuration</code> <code>Add Maven</code><br />
+There we set the name to <code>M3</code><br />
+<img alt="Install Maven" src="../images/jenkins_maven.png" />  </p>
+<h2 id="create-the-build-script">Create the build script</h2>
+<p>The script to build and push the Docker image is written in JavaScript and gets executed
+with Nashorn.</p>
+<pre><code>#!/usr/bin/jjs -fv
+
+var version = $ENV.VERSION;
+var username = $ENV.REGISTRY_USERNAME;
+var password = $ENV.REGISTRY_PASSWORD;
+var email = $ENV.REGISTRY_EMAIL;
+
+var registry = &quot;disruptor.ninja:30500&quot;;
+var image = &quot;robertbrem/battleapp&quot;;
+var completeImageName = registry + &quot;/&quot; + image + &quot;:&quot; + version;
+
+var dockerBuild = &quot;docker build -t &quot; + completeImageName + &quot; .&quot;;
+execute(dockerBuild);
+
+var dockerLogin = &quot;docker login --username=&quot; + username + &quot; --password=&quot; + password + &quot; --email=&quot; + email + &quot; &quot; + registry;
+execute(dockerLogin);
+
+var push = &quot;docker push &quot; + completeImageName;
+execute(push);
+
+function execute(command) {
+    $EXEC(command);
+    print($OUT);
+    print($ERR);
+}
+</code></pre>
+
+<p>This script is available as live script.</p>
+<p>That the script can be executed it has to be executable:</p>
+<pre><code>chmod 750 build.js
+</code></pre>
+
+<h2 id="create-the-pipeline-in-jenkins">Create the pipeline in Jenkins</h2>
+<p>Now create the Jenkins pipeline with the created <code>Jenkinsfile</code>.<br />
+Click in Jenkins on <code>New item</code> with the name <code>battleapp</code> and of type <code>Pipeline</code>.<br />
+<img alt="Jenkins Pipeline" src="../images/jenkins_pipeline.png" />  </p>
+<p>Choose <code>Trigger builds remotely (e.g., from scripts)</code> and set a token.<br />
+<img alt="Trigger build token" src="../images/build_triggers.png" />  </p>
+<p>Choose <code>Pipeline script from SCM</code> with the following settings:<br />
+<img alt="Pipeline from SCM" src="../images/pipeline_from_scm.png" />  </p>
+<p>Then <code>Save</code> and <code>Build Now</code>.  </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../06_Systemtest_ci_step/README/" class="btn btn-neutral float-right" title="README">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../04_Jenkins/README/" class="btn btn-neutral" title="README"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/robertBrem/Microservices_with_Kubernetes" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../04_Jenkins/README/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../06_Systemtest_ci_step/README/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
