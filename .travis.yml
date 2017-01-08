@@ -5,4 +5,4 @@ install:
 - pip install mkdocs
 script:
 - ls -l
-- cd mkdocs && mkdocs build
+- cd mkdocs && mkdocs build && mkdocs gh-deploy
